@@ -17,11 +17,27 @@
             <input id="search-field"  type="text" placeholder="search..." class="input input-bordered w-full max-w-xs bg-black text-white" />
             <button onclick="evenHandler()" class="btn btn-active btn-accent p-y-4">Accent</button>
         </section>
+        <!-- onother button -->
+        <section>
+            <input id="search-field2"  type="text" placeholder="search..." class="input input-bordered w-full max-w-xs bg-red-500
+            text-black" />
+           
+            <button onclick="evenHandler2()" class="btn btn-error">search</button>
+        </section>
 
         <!-- search result -->
+        <!-- loader -->
         <section>
             <div id="phone-container" class="grid lg:grid-cols-3 sm:grid-cols-1 gap-12 p-4">
                
+            </div>
+            <div id="Loading" class="text-center p-16 hidden">
+                <span class="loading loading-spneer loading-lg"></span>
+            </div>
+
+            <!-- show all -->
+            <div  id="Shaw-all-container" class="hidden">
+                <button onclick="ShawAll()" class="btn btn-error " >Show All</button>
             </div>
         </section>
     </main>

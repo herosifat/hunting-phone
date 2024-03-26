@@ -10,6 +10,16 @@ const displayPhone= phones=>{
     // step 1 --- je id te kaj korbo ta khuje ber kora
     const phoneContainer =document.getElementById('phone-container');
     phoneContainer.textContent =''
+    // display who i want
+const shawallcontainer = document.getElementById('Shaw-all-container')
+if(phones.length >12){
+    shawallcontainer.classList.remove('hidden')
+}
+else{
+    shawallcontainer.classList.add('hidden')
+}
+phones =phones.slice(0,12)
+
 phones.forEach(phone=> {
   console.log(phone)  
 //   step 2--- element creation
@@ -32,10 +42,32 @@ phones.forEach(phone=> {
 }
 
 const evenHandler = () =>{
+    
 const searchField =document.getElementById('search-field')
 const searchText =searchField.value;
 console.log(searchText)
 loadPhone(searchText);
 }
 
+// more
+const evenHandler2 = (isShawAll) =>{
+    loadingSpenner(true);
+    const searchField2 =document.getElementById('search-field2');
+  const searchText=searchField2.value;
+  console.log(searchText);
+  loadPhone(searchText);
+}
 
+// speenner
+const loadingSpenner =(isLoading) =>{
+    const load = document.getElementById('Loading')
+    if(isLoading){
+        load.classList.remove('hidden')
+    }
+}
+
+// show All button
+
+const ShawAll= ()=>[
+    evenHandler2(true)
+]
