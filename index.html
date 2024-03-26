@@ -11,6 +11,20 @@
     <header>
         <h1 class="text-6xl">Hunting Phone</h1>
     </header>
+    <main>
+        <!-- search button -->
+        <section class="p-4">
+            <input id="search-field"  type="text" placeholder="search..." class="input input-bordered w-full max-w-xs bg-black text-white" />
+            <button onclick="evenHandler()" class="btn btn-active btn-accent p-y-4">Accent</button>
+        </section>
+
+        <!-- search result -->
+        <section>
+            <div id="phone-container" class="grid lg:grid-cols-3 sm:grid-cols-1 gap-12 p-4">
+               
+            </div>
+        </section>
+    </main>
     
     <script src="js/phone.js"></script>
 </body>
