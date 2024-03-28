@@ -40,6 +40,23 @@
                 <button onclick="ShawAll()" class="btn btn-error " >Show All</button>
             </div>
         </section>
+
+        <!-- show modal -->
+        <!-- Open the modal using ID.showModal() method -->
+
+<dialog id="Shaw_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <h3 id="show-ph-details" class="font-bold text-lg">Hello!</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p>
+    <p id="picture-phone"></p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
     </main>
     
     <script src="js/phone.js"></script>
